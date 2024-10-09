@@ -1,0 +1,19 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - g++ -c lib/mylib.cpp -o lib/mylib.o
+    desc: "Build the C++ code"
+
+  run:
+    cmds:
+      - go run main.go
+    desc: "Run the Go code"
+
+  build-and-run:
+    deps:
+      - build
+    cmds:
+      - go run main.go
+    desc: "Build and run the Go code"
