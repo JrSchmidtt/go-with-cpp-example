@@ -1,4 +1,6 @@
-# golang_c
+# go with cpp example
+
+Demonstration of interoperability between Go and C/C++ with cgo.
 
 ## Requirements
 - Go 1.22 or higher
